@@ -8,10 +8,10 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
     <body>
-        <?php
-        // put your code here
-        ?>
+        <div class="triangle"></div>
+
     </body>
 </html>
