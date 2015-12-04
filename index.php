@@ -3,7 +3,7 @@ session_start();
 include 'header.html';
 ?>
 
-<li><a href="who.php">Qui somme nous?</a></li>
+<li><a href="who.php">Qui sommes nous?</a></li>
 <li><a href="inform.php">S'informer</a></li>
 <li><a href="feed.php">Live Feed</a></li>
 <li><a href="contact.php">Contact</a></li>
@@ -38,7 +38,8 @@ include 'header.html';
             </div><!--/.col-xs-6.col-lg-4-->
         </div><!--/row-->
     </div><!--/.col-xs-12.col-sm-9-->
-    </body>
+</div>
+</body>
     
     <script type="text/javascript" src="js/swipe.js"></script>
     <script>

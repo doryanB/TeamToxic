@@ -3,7 +3,7 @@ session_start();
 include 'header.html';
 ?>
 
-<li><a href="who.php">Qui somme nous?</a></li>
+<li><a href="who.php">Qui sommes nous?</a></li>
 <li><a href="inform.php">S'informer</a></li>
 <li class="active"><a href="feed.php">Live Feed</a></li>
 <li><a href="contact.php">Contact</a></li>
