@@ -3,10 +3,19 @@ $(document).ready(function(){
         annyang.setLanguage("fr-FR");
 
         var commands = {
-            'qui sommes nous': function() {
+            '(qui sommes) nous': function() {
                 window.location.href = "who.php";
             },
             '(live) fide': function() {
+                window.location.href = "feed.php";
+            },
+            'site': function() {
+                window.location.href = "feed.php";
+            },
+            'Sid': function() {
+                window.location.href = "feed.php";
+            },
+            'side': function() {
                 window.location.href = "feed.php";
             },
             'actualité': function() {
@@ -20,6 +29,12 @@ $(document).ready(function(){
             },
             'info': function() {
                 window.location.href = "inform.php";
+            },
+            'information': function() {
+                window.location.href = "inform.php";
+            },
+            'accueil': function() {
+                window.location.href = "index.php";
             },
             "s'informer": function() {
                 window.location.href = "inform.php";
