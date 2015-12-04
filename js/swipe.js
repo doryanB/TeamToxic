@@ -28,29 +28,30 @@ document.addEventListener("touchend", function (event) {
     var tmp;
     if (locked === "Y") {
         tmp = event.changedTouches[0].pageY - touchStartY;
-        if (tmp < sensibility*-1)
+        if (tmp < sensibility * -1)
             swippedUp();
         else if (tmp > sensibility)
             swippedDown();
     } else {
         tmp = event.changedTouches[0].pageX - touchStartX;
-        if (tmp < sensibility*-1)
+        if (tmp < sensibility * -1)
             swippedLeft();
         else if (tmp > sensibility)
             swippedRight();
     }
-    locked=undefined;
+    locked = undefined;
 });
 
 document.addEventListener("touchmove", function (event) {
     var tmp = event.targetTouches[0].pageX - touchStartX;
-    if(tmp>lockSensibility || tmp<lockSensibility*-1){ locked="X";
-    console.log("locked X");
+    if (tmp > lockSensibility || tmp < lockSensibility * -1) {
+        locked = "X";
     }
     else {
         tmp = event.targetTouches[0].pageY - touchStartY;
-        if(tmp>lockSensibility || tmp<lockSensibility*-1){ locked="Y";
-        console.log("locked Y");}
+        if (tmp > lockSensibility || tmp < lockSensibility * -1) {
+            locked = "Y";
+        }
     }
 }, false);
 
