@@ -11,25 +11,10 @@ include 'header.html';
 </div><!-- /.nav-collapse -->
 </div><!-- /.container -->
 </nav><!-- /.navbar -->
-
-
-
-
-
-
 <div class="container">
-
     <div class="row row-offcanvas row-offcanvas-right">
-
-
         <div class="jumbotron">
         </div>
-
-
-
-
-
-
         <div><!--/.col-xs-12.col-sm-9-->
             <div class="col-md-2 col-md-offset-1 col-lg-4">
                 <h2>Qui somme nous?</h2>
@@ -54,35 +39,14 @@ include 'header.html';
         </div><!--/row-->
     </div><!--/.col-xs-12.col-sm-9-->
     </body>
-
-
+    
+    <script type="text/javascript" src="js/swipe.js"></script>
     <script>
-        var sensibility=200;
-        var touchStartX;
-        document.addEventListener("touchstart", function(event){
-            event.preventDefault();
-            touchStartX = event.targetTouches[0].pageX;
-        });
-
-        document.addEventListener("touchend", function(event){
-            var tmp = event.changedTouches[0].pageX-touchStartX;
-            if(tmp>sensibility) swappedLeft();
-            else if(tmp<sensibility*-1) swappedRight();
-        });
-
-        document.addEventListener("touchmove", function(event){
-            var tmp = event.targetTouches[0].pageX-touchStartX;
-            if(tmp<0) return;
-        }, false);
-
-        function swappedLeft(){
-            console.log("Swapped left");
-        }
-        function swappedRight(){
-            console.log("Swapped right");
+        swippedLeft = function(){
+            document.location="who.php";
         }
     </script>
-
+    
    <?php
     include 'footer.html';
     ?>

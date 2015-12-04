@@ -11,6 +11,16 @@ include 'header.html';
 </div><!-- /.nav-collapse -->
 </div><!-- /.container -->
 </nav><!-- /.navbar -->
+
+<script type="text/javascript" src="js/swipe.js"></script>
+    <script>
+        swippedRight = function(){
+            document.location="inform.php";
+        }
+        swippedLeft = function(){
+            document.location="contact.php";
+        }
+    </script>
  <?php
     include 'footer.html';
     ?>
